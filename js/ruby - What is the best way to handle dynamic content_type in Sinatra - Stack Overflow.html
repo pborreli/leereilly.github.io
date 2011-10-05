@@ -1,0 +1,673 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+
+
+
+
+
+
+<head>
+    
+    <title>ruby - What is the best way to handle dynamic content_type in Sinatra - Stack Overflow</title>
+    <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico">
+    <link rel="apple-touch-icon" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.sstatic.net/js/stub.js?v=49f661361016"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.sstatic.net/stackoverflow/all.css?v=8f82c3c15218">
+    
+    <link rel="canonical" href="http://stackoverflow.com/questions/2897929/what-is-the-best-way-to-handle-dynamic-content-type-in-sinatra">
+    <link rel="alternate" type="application/atom+xml" title="Feed for question 'What is the best way to handle dynamic content_type in Sinatra'" href="/feeds/question/2897929">
+    <meta name="title" content="ruby - What is the best way to handle dynamic content_type in Sinatra - Stack Overflow">
+    <link rel="image_src" href="http://sstatic.net/stackoverflow/img/apple-touch-icon.png">
+    <script type="text/javascript">
+        
+        StackExchange.ready(function () {
+
+            StackExchange.question.init({showAnswerHelp:true,totalCommentCount:0,shownCommentCount:0,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:2897929});
+
+            styleCode();
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        StackExchange.init({"stackAuthUrl":"http://stackauth.com","serverTime":1317155208,"styleCode":true,"newTagEditor":true,"enableUserHovercards":true,"enableTabCompletion":true,"site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers"},"user":{"isAnonymous":true,"fkey":"1009fc167ccc6d469aa4d082f5206838","inboxUnviewedCount":-1}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.js":"0324556b7bf7","js/moderator.js":"a2b72d2dcd13","js/full-anon.js":"ddde4de81f4b","js/full.js":"fc3c18132f03","js/wmd.js":"281a9a0e2fbc","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/mobile.js":"97644ef9b7d4","js/help.js":"afb99d79b91b","js/tageditor.js":"1d9dda61b487","js/tageditornew.js":"3a5a5c0e8473","js/inline-tag-editing.js":"955bc2b8e433","js/mathjax-editing.js":"807037d18f3f"});
+    </script>
+
+</head>
+<body class="question-page">
+    <noscript><div id="noscript-padding"></div></noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+    <div class="container">
+        <div id="header">
+            <div id="portalLink">
+                <a class="genu" href="http://stackexchange.com" onclick="StackExchange.ready(function(){genuwine.click();});return false;">Stack Exchange</a>
+            </div>
+            <div id="topbar">
+                <div id="hlinks">
+                    <span id="hlinks-user">
+                  
+                  </span>
+                  <span id="hlinks-nav">
+                  <a href="/users/login?returnurl=%2fquestions%2f2897929%2fwhat-is-the-best-way-to-handle-dynamic-content-type-in-sinatra">log in</a>
+ <span class="lsep">|</span>
+<a href="http://careers.stackoverflow.com">careers</a>
+ <span class="lsep">|</span>
+
+                  </span>
+                  <span id="hlinks-custom">
+                  <a href="http://chat.stackoverflow.com">chat</a>
+ <span class="lsep">|</span>
+<a href="http://meta.stackoverflow.com">meta</a>
+ <span class="lsep">|</span>
+<a href="/about">about</a>
+ <span class="lsep">|</span>
+<a href="/faq">faq</a>
+                  </span>
+                </div>
+                <div id="hsearch">
+                    <form id="search" action="/search" method="get" autocomplete="off">
+                    <div>
+                        <input autocomplete="off" name="q" class="textbox" placeholder="search" tabindex="1" type="text" maxlength="140" size="28" value="">
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="/" >Stack Overflow</a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                        <li class="youarehere"><a id="nav-questions" href="/questions">Questions</a></li>
+                        <li><a id="nav-tags" href="/tags">Tags</a></li>
+                        <li><a id="nav-users" href="/users">Users</a></li>
+                        <li><a id="nav-badges" href="/badges">Badges</a></li>
+                        <li><a id="nav-unanswered" href="/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion"  href="/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        <div id="content">
+            
+
+
+
+<div id="question-header">
+    <h1><a href="/questions/2897929/what-is-the-best-way-to-handle-dynamic-content-type-in-sinatra" class="question-hyperlink">What is the best way to handle dynamic content_type in Sinatra</a></h1>
+</div>
+<div id="mainbar">
+
+
+<div id="question">
+
+    <div class="everyonelovesstackoverflow" id="adzerk1">
+    </div>
+
+    
+    <table>
+    <tr>
+    <td class="votecell">
+        
+<div class="vote">
+    <input type="hidden" value="2897929">
+    <a class="vote-up-off" title="This question shows research effort; it is useful and clear (click again to undo)">up vote</a>
+    <span class="vote-count-post">0</span>
+    <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful (click again to undo)">down vote</a>
+
+    <a class="star-off" href="#" title="This is a favorite question (click again to undo)">favorite</a>
+    <div class="favoritecount"><b>1</b></div>    
+
+    <script type="text/javascript">
+        StackExchange.ready(function() {
+            var shareUrl = "http%3a%2f%2fstackoverflow.com%2fq%2f2897929";
+            var shareMsg = "What+is+the+best+way+to+handle+dynamic+content_type+in+Sinatra";
+            StackExchange.share.facebook($("#fb-share-2897929"), shareUrl, shareMsg);
+            StackExchange.share.twitter($("#twitter-share-2897929"), shareUrl, shareMsg);
+        });
+    </script>
+    <a id="fb-share-2897929" class="fb-share" title="share link to this question on Facebook">share [fb]</a>
+    <a id="twitter-share-2897929" class="twitter-share" title="share link to this question on Twitter">share [tw]</a>    
+
+</div>
+
+    </td>
+
+<td class="postcell">
+<div>          
+    <div class="post-text">
+        <p>I'm currently doing the following but it feels "kludgy":</p>
+
+<pre><code>module Sinatra
+    module DynFormat
+        def dform(data,ct)
+            if ct == 'xml';return data.to_xml;end
+            if ct == 'json';return data.to_json;end
+        end
+    end
+    helpers DynFormat
+end
+</code></pre>
+
+<p>My goal is to plan ahead. Right now we're only working with XML for this particular web service but we want to move over to JSON as soon as all the components in our stack support it.</p>
+
+<p>Here's a sample route:</p>
+
+<pre><code>get '/api/people/named/:name/:format' do
+    format = params[:format]
+    h = {'xml' =&gt; 'text/xml','json' =&gt; 'application/json'}
+    content_type h[format], :charset =&gt; 'utf-8'
+    person = params[:name]
+    salesperson = Salespeople.find(:all, :conditions =&gt; ['name LIKE ?', "%#{person}%"])
+    "#{dform(salesperson,format)}"
+end
+</code></pre>
+
+<p>It just feels like I'm not doing it the best way possible.</p>
+
+    </div>            
+    <div class="post-taglist">
+        <a href="/questions/tagged/ruby" class="post-tag" title="show questions tagged 'ruby'" rel="tag">ruby</a> <a href="/questions/tagged/sinatra" class="post-tag" title="show questions tagged 'sinatra'" rel="tag">sinatra</a> 
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+        <div class="post-menu"><a href="/q/2897929" title="short permalink to this question" id="link-post-2897929">link</a><span class="lsep">|</span><a href="/posts/2897929/edit" >improve this question</a></div>
+    </td>
+                        
+
+    <td class="post-signature owner">
+    <div class="user-info"><div class="user-action-time">asked <span title="2010-05-24 15:06:50Z" class="relativetime">May 24 '10 at 15:06</span></div><div class="user-gravatar32"><a href="/users/349051/lusis"><div class=""><img src="http://www.gravatar.com/avatar/65110d602e44e6d15d917d499a70bda8?s=32&amp;d=identicon&amp;r=PG" alt=""></div></a></div><div class="user-details"><a href="/users/349051/lusis">lusis</a><br><span class="reputation-score" title="reputation score">473</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="6 bronze badges"><span class="badge3"></span><span class="badgecount">6</span></span></div></div>
+    </td>
+    </tr>
+    </table>
+</div>
+</td>
+    </tr>
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-2897929" class="comments dno">
+        <table>
+        <tbody>
+        
+            <tr><td></td><td></td></tr>
+        
+        </tbody>
+    
+        </table>
+    </div>
+    
+    
+    <div class="was-this-helpful">
+        feedback
+    </div>
+    
+</td>
+</tr>    </table>    
+</div>
+
+
+
+<div id="answers">
+
+    <a name="tab-top"></a>
+    <div id="answers-header">
+        <div class="subheader answers-subheader">
+            <h2>1 Answer</h2>
+            <div id="tabs">
+                <a href="/questions/2897929/what-is-the-best-way-to-handle-dynamic-content-type-in-sinatra?answertab=active#tab-top" title="Answers with the latest activity first">active</a>
+<a href="/questions/2897929/what-is-the-best-way-to-handle-dynamic-content-type-in-sinatra?answertab=oldest#tab-top" title="Answers in the order they were provided">oldest</a>
+<a class="youarehere" href="/questions/2897929/what-is-the-best-way-to-handle-dynamic-content-type-in-sinatra?answertab=votes#tab-top" title="Answers with the highest score first">votes</a>
+
+            </div>
+        </div>    
+    </div>    
+
+
+  
+    <a name="2900501"></a>
+    <div id="answer-2900501" class="answer" >
+        <table>
+        <tr>
+        <td class="votecell">
+            
+<div class="vote">
+    <input type="hidden" value="2900501">
+    <a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post">1</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+<span class="vote-accepted-on" title="The question owner accepted this as the best answer May 25 '10 at 1:07">accepted</span>
+</div>
+
+        </td>
+
+
+<td class="answercell">
+    <div class="post-text"><p>a few cleanups in the helper:</p>
+
+<ul>
+<li>adding case statement</li>
+<li>adding a default value for format</li>
+<li>the helper now sets the content type</li>
+</ul>
+
+<p>code:</p>
+
+<pre><code>module Sinatra
+    module DynFormat
+        CONTENT_TYPES={'xml' =&gt; 'text/xml','json' =&gt; 'application/json'}
+
+        def dform(data,format=params[:format])
+            content_type CONTENT_TYPES[format], :charset =&gt; 'utf-8'
+            case format
+            when 'xml'
+              data.to_xml
+            when 'json'
+              data.to_json
+            end
+        end
+    end
+
+    helpers DynFormat
+end
+</code></pre>
+
+<p>here I factored out the content type handling, and removed the person temp variable since it is only used once in favor of using params.
+code:</p>
+
+<pre><code>get '/api/people/named/:name/:format' do    
+    salesperson = Salespeople.find(:all, :conditions =&gt; ['name LIKE ?', "%#{params[:name]}%"])
+    dform(salesperson)
+end
+</code></pre>
+
+<p>Make sense, look cool?</p>
+</div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+        <div class="post-menu"><a href="/questions/2897929/what-is-the-best-way-to-handle-dynamic-content-type-in-sinatra/2900501#2900501" title="permalink to this answer" id="link-post-2900501">link</a><span class="lsep">|</span><a href="/posts/2900501/edit" >improve this answer</a></div>
+    </td>
+            
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover"><div class="user-action-time">answered <span title="2010-05-24 21:35:31Z" class="relativetime">May 24 '10 at 21:35</span></div><div class="user-gravatar32"><a href="/users/120138/baroquebobcat"><div class=""><img src="http://www.gravatar.com/avatar/5e60ac32af93ff0f426c980e43f221e7?s=32&amp;d=identicon&amp;r=PG" alt=""></div></a></div><div class="user-details"><a href="/users/120138/baroquebobcat">BaroqueBobcat</a><br><span class="reputation-score" title="reputation score">3,496</span><span title="2 silver badges"><span class="badge2"></span><span class="badgecount">2</span></span><span title="12 bronze badges"><span class="badge3"></span><span class="badgecount">12</span></span></div></div>
+    </td>
+    </tr>
+    </table>
+</td>        </tr>
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-2900501" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-2951059" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">That&#39;s exactly what I was looking for. I wasn&#39;t aware that params were made available to helpers. I&#39;m still new to sinatra in that regard. I&#39;m still not keen on having to call the helper each time but that will cut out quite a bit of the repetition. I think I have an idea to automatically apply the helper now thanks to you.
+
+I&#39;ll give it a shot.</span> &ndash;&nbsp;<a href="/users/349051/lusis" title="473 reputation" class="comment-user owner">lusis</a> <span class="comment-date"><span title="2010-05-25 01:07:47Z">May 25 '10 at 1:07</span></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    
+    
+    <div class="was-this-helpful">
+        feedback
+    </div>
+    
+</td>
+</tr>    </table>
+</div>
+    <a name='new-answer'></a>
+    <form id="post-form" action="/questions/2897929/answer/submit" method="post"  class="post-form">
+        <h2 class="space">Your Answer</h2>
+       
+
+<script type="text/javascript">
+    StackExchange.ready(function() {
+    
+        initTagRenderer("".split(" "), "".split(" "));
+
+              
+            prepareEditor({
+                
+                heartbeatType: 'answer',
+                bindNavPrevention: true,
+                postfix: "",
+                onDemand: true                ,immediatelyShowMarkdownHelp:true
+            });
+            
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor">  
+
+    
+    <div class="wmd-container">
+        <div id="wmd-button-bar" class="wmd-button-bar"></div>
+        <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101"></textarea>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="1009fc167ccc6d469aa4d082f5206838">
+        <input id="author" name="author" type="text">
+    </div>
+</div>   
+    <div class="form-item">
+        <table>
+        <tr>
+        <td class="vm open-id-login">
+            <a id="login-link" style="font-size: 200%; margin-left: 30px;" href="/users/login?returnurl=%2fquestions%2f2897929%2fwhat-is-the-best-way-to-handle-dynamic-content-type-in-sinatra">log in</a>
+            <script type="text/javascript">
+                StackExchange.ready(function () {
+                    StackExchange.helpers.onClickDraftSave('#login-link');
+                });
+            </script>
+        </td>
+
+    
+        <td class="orcell">
+            <div class="orword">or</div>
+            <div class="orline"></div>
+        </td>
+        <td class="vm">
+            <div>
+                <label for="display-name">Name</label>
+                <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+            </div>
+            <div>
+                <label for="m-address">Email</label>
+                <input id="m-address" name="m-address" type="text" size="40" maxlength="100" value="" tabindex="106">
+                <span class="edit-field-overlay">required, but never shown</span>
+            </div>
+            <div>
+                <label for="home-page">Home Page</label>
+                <input id="home-page" name="home-page" type="text" size="40" maxlength="200" value="" tabindex="107">
+            </div>
+        </td>
+    
+        </tr>
+        </table>
+    </div>
+               
+        <div class="form-submit cbt"><input id="submit-button" type="submit" value="Post Your Answer" tabindex="110"></div>
+    </form>
+
+
+        <h2 class="bottom-notice">
+                Not the answer you're looking for? 
+            Browse other questions tagged <a href="/questions/tagged/ruby" class="post-tag" title="show questions tagged 'ruby'" rel="tag">ruby</a> <a href="/questions/tagged/sinatra" class="post-tag" title="show questions tagged 'sinatra'" rel="tag">sinatra</a> 
+                or <a href="/questions/ask">ask your own question</a>.
+        </h2>
+</div>
+</div>
+<div id="sidebar">
+
+
+
+    <div class="module newuser newuser-greeting" style="display:none">
+        <h4>Hello World!</h4>
+        <div>
+            <p>This is a collaboratively edited question and answer site for <b>professional and enthusiast programmers</b>. It's 100% free, no registration required.</p>
+            <p class="ar"><a href="/about">about &raquo;</a>&nbsp;&nbsp;&nbsp;<a href="/faq">faq &raquo;</a></p>
+        </div>
+    </div>
+    <div class="module">
+        <p class="label-key">tagged</p>
+        <div class="tagged"><a href="/questions/tagged/ruby" class="post-tag" title="show questions tagged 'ruby'" rel="tag">ruby</a>&nbsp;<span class="item-multiplier">&times;&nbsp;30919</span><br>
+<a href="/questions/tagged/sinatra" class="post-tag" title="show questions tagged 'sinatra'" rel="tag">sinatra</a>&nbsp;<span class="item-multiplier">&times;&nbsp;884</span><br>
+</div>
+        <table id="qinfo">
+            <tr>
+                <td><p class="label-key">asked</p></td>
+                <td style="padding-left:10px"><p class="label-key" title="2010-05-24 15:06:50Z"><b>1 year ago</b></p></td>
+            </tr>
+            <tr>
+                <td><p class="label-key">viewed</p></td>
+
+                <td style="padding-left:10px"><p class="label-key"><b>607 times</b></p></td>
+            </tr>
+            <tr>
+                <td><p class="label-key">active</p></td>
+                <td style="padding-left:10px"><p class="label-key"><b><a href="?lastactivity" class="lastactivity-link" title="2010-05-24 21:35:31Z">1 year ago</a></b></p></td>
+            </tr>
+        </table>
+    </div>
+    
+        <script type="text/javascript">
+            var scriptSrc = "http://engine2.adzerk.net/z/8277/adzerk1_2_4_43,adzerk2_2_17_45?keywords=ruby,sinatra";
+            if (document.referrer) {
+                if (/\?/.test(scriptSrc))
+                    scriptSrc += "&";
+                else
+                    scriptSrc += "?";
+                scriptSrc += "xReferrer=" + document.referrer;
+            }
+            var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = scriptSrc; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);
+        </script>
+    
+    <div class="everyonelovesstackoverflow" id="adzerk2">
+    </div>
+
+    
+    <div>
+        <script type="text/javascript">
+            var careers_adurl="http://careers.stackoverflow.com/ad/js",careers_cssurl="http://cdn.sstatic.net/careers/ads/ad.min.css?337432",careers_bannercssurl="http://cdn.sstatic.net/careers/ads/banner.min.css?3373f6";(function(){var b="min-height:220px;margin:15px 0",c=$("<div>").addClass("hireme").attr("style",b),a=$("<div>").html(c);document.write(a.html());$.ajax({url:"http://cdn.sstatic.net/careers/ads/adloader.min.js?337711",dataType:"script",cache:true})})();
+        </script>
+    </div>
+
+      
+
+    <div class="module">
+    <h4 id="h-related">Related</h4>
+    <div class="related">
+    <div class="spacer">
+<a href="/questions/1697687/ruby-sinatra-and-closing-connections" class="question-hyperlink">Ruby, Sinatra and Closing Connections</a>
+</div>
+<div class="spacer">
+<a href="/questions/2203600/sinatra-whats-the-correct-way-to-serve-a-plain-old-file" class="question-hyperlink">Sinatra: What&#39;s the correct way to serve a plain old file?</a>
+</div>
+<div class="spacer">
+<a href="/questions/2277185/how-to-get-all-of-the-url-parameters-in-a-sinatra-app" class="question-hyperlink">How to get ALL of the URL parameters in a Sinatra app</a>
+</div>
+<div class="spacer">
+<a href="/questions/2585131/sinatra-set-settings-ruby" class="question-hyperlink">Sinatra Set Settings (Ruby)</a>
+</div>
+<div class="spacer">
+<a href="/questions/2589356/execute-code-once-sinatra-server-is-running" class="question-hyperlink">Execute code once Sinatra server is running</a>
+</div>
+<div class="spacer">
+<a href="/questions/3027435/is-there-a-way-to-flush-html-to-the-wire-in-sinatra" class="question-hyperlink">Is there a way to flush html to the wire in Sinatra</a>
+</div>
+<div class="spacer">
+<a href="/questions/3547970/sinatra-put-method-not-working" class="question-hyperlink">Sinatra PUT method not working?</a>
+</div>
+<div class="spacer">
+<a href="/questions/3551746/calling-sinatra-from-within-sinatra" class="question-hyperlink">Calling Sinatra from within Sinatra</a>
+</div>
+<div class="spacer">
+<a href="/questions/4347466/whats-the-best-way-to-profile-a-sinatra-application" class="question-hyperlink">What&#39;s the best way to profile a Sinatra application?</a>
+</div>
+<div class="spacer">
+<a href="/questions/4432513/what-should-i-use-to-document-my-sinatra-routes" class="question-hyperlink">What should I use to document my Sinatra routes?</a>
+</div>
+<div class="spacer">
+<a href="/questions/4620092/ruby-and-sinatra" class="question-hyperlink">Ruby and Sinatra</a>
+</div>
+<div class="spacer">
+<a href="/questions/4632122/set-default-content-type-for-sinatra" class="question-hyperlink">Set default content_type for Sinatra</a>
+</div>
+<div class="spacer">
+<a href="/questions/4750046/is-there-an-easy-way-of-referring-to-the-public-directory-in-sinatra" class="question-hyperlink">Is there an easy way of referring to the public directory in Sinatra?</a>
+</div>
+<div class="spacer">
+<a href="/questions/5079972/sinatra-routes-and-i18n" class="question-hyperlink">Sinatra routes and i18n</a>
+</div>
+<div class="spacer">
+<a href="/questions/5396890/sinatra-modular-style-what-did-i-do-wrong" class="question-hyperlink">Sinatra, modular style. What did I do wrong?</a>
+</div>
+<div class="spacer">
+<a href="/questions/5493436/sinatra-not-sending-response-once-i-add-an-extra-method-call" class="question-hyperlink">Sinatra not sending response once I add an extra method call</a>
+</div>
+<div class="spacer">
+<a href="/questions/5649480/get-sinatrabase-instance" class="question-hyperlink">Get Sinatra::Base instance</a>
+</div>
+<div class="spacer">
+<a href="/questions/5721465/dynamic-form-in-sinatra" class="question-hyperlink">Dynamic Form in Sinatra</a>
+</div>
+<div class="spacer">
+<a href="/questions/5824736/sinatra-helper-to-fake-a-request" class="question-hyperlink">Sinatra helper to fake a request</a>
+</div>
+<div class="spacer">
+<a href="/questions/5920316/sinatra-and-computed-view-name" class="question-hyperlink">Sinatra and computed view name</a>
+</div>
+<div class="spacer">
+<a href="/questions/5960381/sinatra-render-a-ruby-file" class="question-hyperlink">Sinatra render a ruby file</a>
+</div>
+<div class="spacer">
+<a href="/questions/6726042/what-is-the-process-for-loading-and-running-a-sinatra-app" class="question-hyperlink">What is the process for loading and running a Sinatra app?</a>
+</div>
+<div class="spacer">
+<a href="/questions/7021004/how-to-pass-string-to-view-in-sinatra" class="question-hyperlink">how to pass string to view in sinatra</a>
+</div>
+<div class="spacer">
+<a href="/questions/7031340/sinatra-ruby-1-9-2-fails-with-illegal-instruction" class="question-hyperlink">Sinatra Ruby 1.9.2 fails with &ldquo;Illegal Instruction&rdquo;</a>
+</div>
+<div class="spacer">
+<a href="/questions/7058229/sinatra-conditions" class="question-hyperlink">Sinatra Conditions</a>
+</div>
+
+    </div>
+    </div>
+</div>
+
+<div id="feed-link">
+    <div id="feed-link-text"><a href="/feeds/question/2897929" title="feed of this question and its answers"><span class="feed-icon"></span>question feed</a></div>
+</div>
+<script type="text/javascript" src="/posts/2897929/ivc/b768"></script>
+<noscript>
+    <div><img src="/posts/2897929/ivc/b768" class="dno" alt=""></div>
+</noscript>
+<div style="display:none" id="prettify-lang">lang-rb</div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                <a href="/about">about</a> |
+                <a href="/faq">faq</a> |
+                
+                    <span onclick="if(window.localStorage){localStorage.setItem('blog-new',1317223370000); $('.new-blog-post').fadeOut();}">
+                        <script type="text/javascript">if(!window.localStorage || new Date(+localStorage.getItem('blog-new'))<new Date())document.write('<span title="Welcome Valued Associate Sean Gallagher, by Jin Yang - 5 hours ago" class="new-blog-post">new<\/span>');</script>
+                        <a href="http://blog.stackexchange.com">blog</a>
+                    </span> |
+                    <a href="http://chat.stackoverflow.com">chat</a> |
+                <a href="http://data.stackexchange.com">data</a> |
+                <a href="http://blog.stackoverflow.com/category/podcasts/">podcast</a> |
+                <a href="http://shop.stackexchange.com/">shop</a> |
+                <a href="http://stackexchange.com/legal">legal</a> |
+                <a href="http://engine.adzerk.net/redirect/0/2776/2751/0/4de3c60f719c4dfcb1a57531c7050090/0">advertising info</a> |
+
+                <a onclick="StackExchange.switchMobile('on', '/questions/2897929/what-is-the-best-way-to-handle-dynamic-content-type-in-sinatra')">mobile</a> |
+
+                <b><a href="mailto:team@stackoverflow.com">contact us</a></b>
+                  | <b><a href="http://meta.stackoverflow.com">feedback</a></b>
+                <div id="footer-sites">
+                    
+                        <span style="color:#FE7A15;font-size:140%">&#9632;</span>&nbsp;<a href="http://stackoverflow.com">stackoverflow.com</a>&nbsp; 
+                        <span style="color:#FE7A15;font-size:140%">&#9632;</span>&nbsp;<a href="http://stackapps.com">api/apps</a>&nbsp; 
+                        <span style="color:#FE7A15;font-size:140%">&#9632;</span>&nbsp;<a href="http://careers.stackoverflow.com">careers</a>&nbsp; 
+                        <span style="color:#E8272C;font-size:140%">&#9632;</span>&nbsp;<a href="http://serverfault.com">serverfault.com</a>&nbsp; 
+                        <span style="color:#00AFEF;font-size:140%">&#9632;</span>&nbsp;<a href="http://superuser.com">superuser.com</a>&nbsp; 
+                        <span style="color:#969696;font-size:140%">&#9632;</span>&nbsp;<a href="http://meta.stackoverflow.com">meta</a>&nbsp; 
+                        <span style="color:#46937D;font-size:140%">&#9632;</span>&nbsp;<a href="http://area51.stackexchange.com">area&nbsp;51</a>&nbsp; 
+                        <span style="color:#C0D0DC;font-size:140%">&#9632;</span>&nbsp;<a href="http://webapps.stackexchange.com">webapps</a>&nbsp; 
+                        <span style="color:#000000;font-size:140%">&#9632;</span>&nbsp;<a href="http://gaming.stackexchange.com">gaming</a>&nbsp; 
+                        <span style="color:#dd4814;font-size:140%">&#9632;</span>&nbsp;<a href="http://askubuntu.com">ubuntu</a>&nbsp; 
+                        <span style="color:#9ce4fe;font-size:140%">&#9632;</span>&nbsp;<a href="http://webmasters.stackexchange.com">webmasters</a>&nbsp; 
+                        <span style="color:#cf4d3f;font-size:140%">&#9632;</span>&nbsp;<a href="http://cooking.stackexchange.com">cooking</a>&nbsp; 
+                        <span style="color:#f4f28d;font-size:140%">&#9632;</span>&nbsp;<a href="http://gamedev.stackexchange.com">game development</a>&nbsp; 
+                        <span style="color:#0f3559;font-size:140%">&#9632;</span>&nbsp;<a href="http://math.stackexchange.com">math</a>&nbsp; 
+                        <span style="color:#f2f2f2;font-size:140%">&#9632;</span>&nbsp;<a href="http://photo.stackexchange.com">photography</a>&nbsp; 
+                        <span style="color:#037187;font-size:140%">&#9632;</span>&nbsp;<a href="http://stats.stackexchange.com">stats</a>&nbsp; 
+                        <span style="color:#f1e7cc;font-size:140%">&#9632;</span>&nbsp;<a href="http://tex.stackexchange.com">tex</a>&nbsp; 
+                        <span style="color:#e1cdae;font-size:140%">&#9632;</span>&nbsp;<a href="http://english.stackexchange.com">english</a>&nbsp; 
+                        <span style="color:#a2d9f6;font-size:140%">&#9632;</span>&nbsp;<a href="http://cstheory.stackexchange.com">theoretical cs</a>&nbsp; 
+                        <span style="color:#1b3e6c;font-size:140%">&#9632;</span>&nbsp;<a href="http://programmers.stackexchange.com">programmers</a>&nbsp; 
+                        <span style="color:#293a5d;font-size:140%">&#9632;</span>&nbsp;<a href="http://unix.stackexchange.com">unix</a>&nbsp;
+                        <span style="color:#bec0cb;font-size:140%">&#9632;</span>&nbsp;<a href="http://apple.stackexchange.com">apple</a>&nbsp;
+                        <span style="color:#939185;font-size:140%">&#9632;</span>&nbsp;<a href="http://wordpress.stackexchange.com">wordpress</a>&nbsp;
+                        <span style="color:#b5cda4;font-size:140%">&#9632;</span>&nbsp;<a href="http://physics.stackexchange.com">physics</a>&nbsp;
+                        <span style="color:#4176ab;font-size:140%">&#9632;</span>&nbsp;<a href="http://diy.stackexchange.com">home&nbsp;improvement</a>&nbsp;
+                        <span style="color:#d1d8d7;font-size:140%">&#9632;</span>&nbsp;<a href="http://gis.stackexchange.com">gis</a>&nbsp;
+                        <span style="color:#e5e2d3;font-size:140%">&#9632;</span>&nbsp;<a href="http://electronics.stackexchange.com">electronics</a>&nbsp;
+                        <span style="color:#a4c639;font-size:140%">&#9632;</span>&nbsp;<a href="http://android.stackexchange.com">android</a>&nbsp;
+                        <span style="color:#2e4e60;font-size:140%">&#9632;</span>&nbsp;<a href="http://security.stackexchange.com">security</a>&nbsp;
+                        <span style="color:#45bcb5;font-size:140%">&#9632;</span>&nbsp;<a href="http://bicycles.stackexchange.com">bicycles</a>&nbsp;
+                        <span style="color:#00adee;font-size:140%">&#9632;</span>&nbsp;<a href="http://dba.stackexchange.com">dba</a>&nbsp;
+                        <span style="color:#2edaf0;font-size:140%">&#9632;</span>&nbsp;<a href="http://drupal.stackexchange.com">drupal</a>&nbsp;
+                        <span style="color:#213951;font-size:140%">&#9632;</span>&nbsp;<a href="http://sharepoint.stackexchange.com">sharepoint</a>&nbsp;
+                </div>
+            </div>
+            <div id="footer-flair">
+                <a class="peer1" href="http://www.peer1.com/stackoverflow"></a>  
+	            <a href="http://creativecommons.org/licenses/by-sa/3.0/" class="cc-wiki-link"></a>
+                <div id="svnrev">rev 2011.9.27.2</div>
+            </div>
+            <div id="copyright">
+                site design / logo &copy; 2011 stack exchange inc; 
+                user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc-wiki</a> with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            
+
+        </div>
+    </div>
+    
+    <noscript>
+        <div id="noscript-warning">Stack Overflow works best with JavaScript enabled<img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"></div>
+    </noscript>
+    
+    <script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-5620270-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src='http://www.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();_qoptions={qacct:"p-c1rF4kxgLUzNc"};</script>
+    <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+    
+
+</body>
+</html>
