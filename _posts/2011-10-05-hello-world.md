@@ -3,16 +3,15 @@ layout: post
 title: Hello World
 published: true
 ---
+{% highlight ruby linenos %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
 
     10 PRINT "JEKYLL IS COOL"
     20 GOTO 10
     run
-    JEKYLL IS COOL
-    JEKYLL IS COOL
-    JEKYLL IS COOL
-    JEKYLL IS COOL
-    JEKYLL IS COOL
-    JEKYLL IS COOL
     JEKYLL IS COOL
     JEKYLL IS COOL
     JEKYLL IS COOL
