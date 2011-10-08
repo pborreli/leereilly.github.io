@@ -13,11 +13,13 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/syntax.css">
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
     <style type="text/css">
       /* Override some defaults */
       html, body {
         background-color: #eee;
       }
+      
       body {
         padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
       }
@@ -45,7 +47,7 @@
                 border-radius: 0 0 6px 6px;
         -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-                box-shadow: 0 1px 2px rgba(0,0,0,.15);
+                box-shadow: 0 1px 2px rgba(0,0,0,.15);  
       }
 
       /* Page header tweaks */
@@ -78,7 +80,7 @@
       
       h1 {
         font-family: "ocra10", Courier;
-        font-weight:bold;
+        font-weight: bold;
       }
       
       h2 {
@@ -118,9 +120,6 @@
       }
       
       .code {
-        /*  */
-        
-      
         font-family: "ocra10", monospace, "Courier New";
       }
 
@@ -149,6 +148,7 @@
                 <li><a href="http://www.linkedin.com/in/lreilly">LinkedIn</a></li>
                 <li><a href="http://facebook.com/lee337reilly">Facebook</a></li>
                 <li><a href="http://www.youtube.com/watch?v=dQw4w9WgXcQ">MySpace</a></li>
+                <li><a href="http://www.last.fm/user/leereilly">Last.fm</a></li>
                 <li><a data-controls-modal="xbox" data-backdrop="static">XBOX 360</a></li>
                 <li><a data-controls-modal="ps3" data-backdrop="static">PS3</a></li>
                 <li class="divider"></li>
@@ -167,15 +167,15 @@
           <div class="span14">
             {% if page.front_page %}
               <section itemscope itemtype="http://data-vocabulary.org/Person"> 
-                <ul class="media-grid" style="float:right;">
+                <ul class="media-grid" style="float:right; padding-left: 10px">
                   <li>
                     <a href="#">
-                      <img class="thumbnail" src="http://www.gravatar.com/avatar/1fab61d7bd7d5d437bf3dac86091b3e3.png" alt="Lee Reilly itemprop="photo"">
+                      <img class="thumbnail" src="http://www.gravatar.com/avatar/1fab61d7bd7d5d437bf3dac86091b3e3.png?s=80" width="80" height="80" alt="Lee Reilly" itemprop="photo">
                     </a>
                   </li>
                 </ul>
                 <h1>Hello, World!</h1>  
-                <span itemprop="name">Lee Reilly</span>
+                <p><span itemprop="name">Lee Reilly</span>
                 is a
                 <span itemprop="title">software engineer</span> 
                 at  
@@ -186,7 +186,7 @@
                   <span itemprop="region">CA</span>  
                 </span>
                 . Lee has spent the majority of his career working at nuclear research and weapons laboratories, but he's no rocket scientist... <a href="/about.html">more</a> »
-              </section>
+              </section></p>
             {% else %}
               <h1>{{ page.title }}</h1>  
             {% endif %} 
@@ -204,8 +204,6 @@
             {{ content }}
             
           </div>
-          <!--<img src="/img/octo-engineer.png" style="float:left;" width="125">-->
-          
         </div>
       </div>
     </div>
