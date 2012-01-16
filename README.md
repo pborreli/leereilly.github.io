@@ -1,3 +1,5 @@
+[![endorse](http://api.coderwall.com/leereilly/endorsecount.png)](http://coderwall.com/leereilly)
+
 This is the source for leereilly.net / leereilly.github.com. Feel free to fork it for yourself, modify and use it. 
 
 # Need Help?
