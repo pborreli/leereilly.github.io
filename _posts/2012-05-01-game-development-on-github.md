@@ -2,9 +2,6 @@
 layout: post
 title: Jump into Game Development with GitHub
 published: true
-categories:
-- github
-- games
 ---
 
 <div class="thumbnail">
