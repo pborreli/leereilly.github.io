@@ -21,7 +21,7 @@ categories:
 
 <img src="http://i.imgur.com/TdAvz.png" alt="" style="float:right;">
 
-I'm always blown away by [GDC](http://www.gdconf.com/) attendees' passion for games - especially the students, recent graduates and indie developers that are there to network and try and break into the industry. I've heard more than a few people say that the most valuable thing about the GDC is the connections that they make, and it's these connections that help them find the jobs of their dreams in professional game development.
+I’m always blown away by [GDC](http://www.gdconf.com/) attendees’ passion for games - especially the students, recent graduates and indie developers there to network and break into the industry. I’ve heard more than a few people say that the most valuable thing about the GDC is the connections that they make; it's these connections that help them find their dream jobs in professional game development.
 
 I'd like to take a few moments of your time and tell you about another way to connect, get noticed and perhaps find your dream job.
 
