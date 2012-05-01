@@ -3,25 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <meta name="description" content="Lee's stuff on GitHub">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lee Reilly">
     <meta name="author" content="Lee Reilly">
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/css/syntax.css">
-    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
-    <style type="text/css">
-      /* Override some defaults */
-      html, body {
-        background-color: #eee;
-      }
 
+    <!-- Le styles -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <style>
       body {
-        padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
 
       @font-face {
@@ -29,76 +19,24 @@
         src: url(/fonts/ocra10.ttf) format("truetype");
       }
 
-      .container > footer p {
-        text-align: center; /* center align it with the container */
-      }
-
-      .container {
-        width: 820px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
-      }
-
-      /* The white background content wrapper */
-      .content {
-        background-color: #fff;
-        padding: 20px;
-        margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-        -webkit-border-radius: 0 0 6px 6px;
-           -moz-border-radius: 0 0 6px 6px;
-                border-radius: 0 0 6px 6px;
-        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-                box-shadow: 0 1px 2px rgba(0,0,0,.15);
-      }
-
-      /* Page header tweaks */
-      .page-header {
-        background-color: #f5f5f5;
-        padding: 20px 20px 10px;
-        margin: -20px -20px 20px;
-        font-family: "ocra10", Courier;
-      }
-
       .navbar {
         font-family: "ocra10", Courier;
       }
 
-      /* Styles you shouldn't keep as they are for displaying this base example only */
-      .content .span10,
-      .content .span4 {
-        min-height: 500px;
-      }
-      /* Give a quick and non-cross-browser friendly divider */
-      .content .span4 {
-        margin-left: 0;
-        padding-left: 19px;
-        border-left: 1px solid #eee;
+      h1,h2,h3,h4{
+        color: #333;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-weight: 400;
+        border-bottom: 1px solid #ccc;
       }
 
-      .topbar .btn {
-        border: 0;
-      }
-
-      h1 {
-        font-family: "ocra10", Courier;
-        font-weight: bold;
-      }
-
-      h2 {
-        font-family: "ocra10", Courier;
-      }
-
-      ul.posts {
-        list-style-type: none;
-        margin-bottom: 2em;
-      }
-
-      ul.posts li {
-        line-height: 1.75em;
-      }
-
-      ul.posts span {
-        color: #aaa;
-        font-family: "ocra10", monospace, "Courier New";
+      .post p ul li{
+        margin-bottom: 20px;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        padding-left: 0px;
+        font-size: 20px;
+        color: #333;
+        font-weight: 100;
       }
 
       pre.code {
@@ -119,30 +57,50 @@
         border-radius: 3px;
       }
 
-      .code {
+      ul.posts {
+        list-style-type: none;
+        margin-bottom: 2em;
+      }
+
+      ul.posts li {
+        line-height: 1.75em;
+      }
+
+      ul.posts span {
+        color: #aaa;
         font-family: "ocra10", monospace, "Courier New";
       }
 
+      .code {
+        font-family: "ocra10", monospace, "Courier New";
+      }
     </style>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="/js/bootstrap-dropdown.js"></script>
-    <script src="/js/bootstrap-modal.js"></script>
-    <script src='/js/jTypeWriter.js'></script>
-    <script src='/js/blink.js'></script>
-    {% include google_analytics %}
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   </head>
+
   <body>
-    <a href="http://github.com/leereilly/leereilly.github.com/"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:99999;" src="https://a248.e.akamai.net/assets.github.com/img/4c7dc970b89fd04b81c8e221ba88ff99a06c6b61/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub"></a>
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container-fluid">
+        <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Lee Reilly</a>
+          <a class="brand" href="http://leereilly.net/">Lee Reilly</a>
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="/about.html">About</a></li>
@@ -170,78 +128,54 @@
     </div>
 
     <div class="container">
-
-      <div class="content">
-        <div class="row">
-          <div class="span14">
-            {% if page.front_page %}
-              <section itemscope itemtype="http://data-vocabulary.org/Person">
+          <div class="row">
+            <div class="span3">
+              <div class="well sidebar-nav">
                 <ul class="thumbnails pull-right">
                   <li>
                     <a href="#" class="thumbnail">
-                      <img src="http://www.gravatar.com/avatar/1fab61d7bd7d5d437bf3dac86091b3e3.png?s=80" width="80" height="80" alt="Lee Reilly" itemprop="photo">
+                      <img src="http://www.gravatar.com/avatar/1fab61d7bd7d5d437bf3dac86091b3e3.png?s=230" width="230" height="230" alt="Lee Reilly" itemprop="photo">
                     </a>
                   </li>
                 </ul>
-                <h1>Hello, World!</h1>
-                <p><span itemprop="name">Lee Reilly</span>
-                is a
-                <span itemprop="title">software engineer</span>
-                at
-                <span itemprop="affiliation">Github</span>
-                in
-                <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-                   <span itemprop="locality">San Francisco</span>,
-                  <span itemprop="region">CA</span>
-                </span>
-                . Lee has spent the majority of his career working at nuclear research and weapons laboratories, but he's no rocket scientist... <a href="/about.html">more</a> »
-              </section></p>
-            {% else %}
-              <h1>{{ page.title }}</h1>
-            {% endif %}
+                <a href="https://twitter.com/lee337reilly" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @lee337reilly</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              </div><!--/.well -->
+            </div><!--/span-->
+            <div class="span9">
 
-            {% if page.imgur %}
-              <ul class="media-grid" style="float:left; padding: 0px 20px 20px 0px;">
-                <li>
-                  <a href="#">
-                    <img class="thumbnail" src="http://i.imgur.com/{{ page.imgur }}" alt="{{ page.title }}">
-                  </a>
-                </li>
-              </ul>
-            {% endif %}
+              {% if page.front_page %}
+              <div class="hero-unit">
+                <h1>Lee Reilly</h1>
+                <p>Lee Reilly is a software developer at Github in San Francisco, CA. Lee has spent the majority of his career working at nuclear research and weapons laboratories, but he's no rocket scientist... </p>
+              </div>
+              {% endif %}
 
-            {{ content }}
+                <div class="span9">
+                  {% if page.front_page.nil? %}
+                    <h1>{{ page.title }}</h1>
+                  {% endif %}
 
-          </div>
-        </div>
-      </div>
-    </div>
+                  {{ content }}
+                </div><!--/span-->
+              </div><!--/row-->
+            </div><!--/span-->
+          </div><!--/row-->
 
-    <div class="modal hide fade" id="xbox">
-      <div class="modal-header">
-        <a class="close" data-dismiss="modal">×</a>
-        <h3>XBOX Live</h3>
-      </div>
-      <div class="modal-body">
-        <center><img src="http://i.imgur.com/MVc5X.jpg" style="margin-left: auto; margin-right: auto;" alt="VRRRRRRRRMMMMMM!" border="0" /></center>
-      </div>
-      <div class="modal-footer">
-       <p>My gamertag is <strong>leereillyDOTnet</strong>. Let's play some Gears of War!</p>
-      </div>
-    </div>
+          <hr>
 
-    <div class="modal hide fade" id="playstation">
-      <div class="modal-header">
-        <a class="close" data-dismiss="modal">×</a>
-        <h3>Playstation Network</h3>
-      </div>
-      <div class="modal-body">
-        <center><img src="http://i.imgur.com/psb9b.jpg" style="margin-left: auto; margin-right: auto;" alt="VRRRRRRRRMMMMMM!" border="0" /></center>
-      </div>
-      <div class="modal-footer">
-       <p>My gamertag is <strong>leereillyDOTnet</strong>. Let's play some FIFA Soccer!</p>
-      </div>
-    </div>
+          <footer>
+
+          </footer>
+
+        </div><!--/.container-->
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/js/bootstrap-dropdown.js"></script>
+    <script src="/js/bootstrap-modal.js"></script>
+    <script src='/js/jTypeWriter.js'></script>
+    <script src='/js/blink.js'></script>
+    {% include google_analytics %}
 
   </body>
 </html>
