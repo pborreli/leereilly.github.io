@@ -53,7 +53,7 @@ A GitHub account will document all of your work and can serve as your portfolio 
 
 ## Potential employers will see your work.
 
-Game development companies like [Blizzard](https://github.com/blizzard), [Zynga](https://github.com/zynga), and [Unity](https://github.com/Unity-Technologies) use GitHub. A number of other companies use [GitHub Enterprise](https://enterprise.github.com) internally. **A GitHub profile Any recruiter will see that your passionate about game development.**
+Game development companies like [Blizzard](https://github.com/blizzard), [Zynga](https://github.com/zynga), and [Unity](https://github.com/Unity-Technologies) use GitHub. A number of other companies use [GitHub Enterprise](https://enterprise.github.com) internally. **A GitHub profile will show a recruiter that you're passionate about game development.**
 
 ## Getting Started
 
