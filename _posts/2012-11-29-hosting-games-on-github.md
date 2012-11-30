@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hostings Games on GitHub
+title: Hosting Games on GitHub
 published: true
 ---
 
