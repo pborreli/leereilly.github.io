@@ -68,7 +68,7 @@ Within a few minutes your game will be available at http://leereilly.github.com/
 
 ## Level 5: Custom Domain Names
 
-You can also set up [custom domain names](https://help.github.com/articles/setting-up-a-custom-domain-with-pages). The `CNAME` file in my [leereilly/leereilly.github.com](https://github.com/leereilly/leereilly.github.com) repository ensures that that leereilly.github.com/Coil redirects to leereilly.net/Coil.
+You can also set up [custom domain names](https://help.github.com/articles/setting-up-a-custom-domain-with-pages). The <pre>CNAME</pre> file in my [leereilly/leereilly.github.com](https://github.com/leereilly/leereilly.github.com) repository ensures that that leereilly.github.com/Coil redirects to leereilly.net/Coil.
 
 ## Games Hosted on GitHub
 
