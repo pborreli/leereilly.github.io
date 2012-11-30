@@ -4,7 +4,7 @@ title: Hosting Games on GitHub
 published: true
 ---
 
-<div class="alert alert-info">
+<div>
   The intended audience for this post is rather specific: [Game-Off](http://game-off.github.com), [Game On](http://www.mozilla.org/en-US/gameon/), [Global Game Jam](http://globalgamejam.org/) and other [game jam](http://www.gamejamcentral.com/) particpants. Actually, anyone interested in using GitHub to host both their games' source code and the playable version may be interested.
 </div>
 
