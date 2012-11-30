@@ -131,6 +131,6 @@ Here are some game/game-related repositories I've found hosted on GitHub. I invi
 
 ## Thanks for listening
 
-Have I missed any cool game-related projects on GitHub? Please feel free to fork and add your game to my [games repository](https://github.com/leereilly/games). Have you used any of these libraries in your games? Anything you want to share? Let me know! Send a tweet to [@lee337reilly](http://www.twitter.com/lee337reilly).
+Have I missed any cool game-related projects on GitHub? Please feel free to fork and add your game to my [games repository](https://github.com/leereilly/games). Have you used any of these libraries in your games? Anything you want to share? Let me know! Send a tweet to [@leereilly](http://www.twitter.com/leereilly).
 
 <img src="http://i.imgur.com/7AMPJ.png" style="float: right;">
