@@ -31,36 +31,36 @@ Next,  [clone](https://help.github.com/articles/duplicating-a-repo) the reposito
 
 ![](http://i.imgur.com/WvL9y.png)
 
-```
+<pre>
 $ git clone https://github.com/leereilly/Coil.git
 Cloning into 'Coil'...
 remote: Counting objects: 37, done.
 remote: Compressing objects: 100% (26/26), done.
 remote: Total 37 (delta 11), reused 35 (delta 9)
 Unpacking objects: 100% (37/37), done.
-```
+</pre>
 
 ## Level 3: Playing
 
 If you open the index.html file you should be able to play the game locally.
 
-```
+<pre>
 $ cd Coil/
 $ open index.html
-```
+</pre>
 
 ## Level 4: Pushing
 
 To host the game on GitHub you'll need to create a branch called [gh-pages](https://help.github.com/articles/creating-project-pages-manually).
 
-```
+<pre>
 $ git co -b gh-pages
 Switched to a new branch 'gh-pages'
 $ git push origin gh-pages
 Total 0 (delta 0), reused 0 (delta 0)
 To https://github.com/leereilly/Coil.git
  * [new branch]      gh-pages -> gh-pages
-```
+</pre>
 
 Within a few minutes your game will be available at http://leereilly.github.com/Coil. Again, replace *leereilly* with your username.
 
