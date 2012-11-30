@@ -4,9 +4,9 @@ title: Hosting Games on GitHub
 published: true
 ---
 
-<div>
-  The intended audience for this post is rather specific: [Game-Off](http://game-off.github.com), [Game On](http://www.mozilla.org/en-US/gameon/), [Global Game Jam](http://globalgamejam.org/) and other [game jam](http://www.gamejamcentral.com/) particpants. Actually, anyone interested in using GitHub to host both their games' source code and the playable version may be interested.
-</div>
+<span></span>
+
+The intended audience for this post is rather specific: [Game-Off](http://game-off.github.com), [Game On](http://www.mozilla.org/en-US/gameon/), [Global Game Jam](http://globalgamejam.org/) and other [game jam](http://www.gamejamcentral.com/) particpants. Actually, anyone interested in using GitHub to host both their games' source code and the playable version may be interested.
 
 If you have a static-ish game (HTML5, JavaScript, Flash, Unity, etc) with no serverside dependncies (databases, scoreboards, multiplayer, etc) then you can leverage [GitHub Pages](http://pages.github.com/) for free, fast, and reliable hosting.
 
