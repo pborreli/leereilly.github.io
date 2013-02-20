@@ -24,7 +24,7 @@ I'd like to take a few moments of your time and tell you about another way to co
 
 ## Geting Noticed
 
-In 2010 [Jacob Minkoff](http://jacobminkoff.com/) delivered an inspiring talk about [getting notice](http://www.youtube.com/watch?v=yxW0lq47mcE&feature=player_embedded), advising people how they could get their foot in the door. *If you want a job in the games industry, stop what you're doing right now and watch his talk.*
+In 2010 [Jacob Minkoff](http://jacobminkoff.com/) delivered an inspiring talk about [getting noticed](http://www.youtube.com/watch?v=yxW0lq47mcE&feature=player_embedded), advising people how they could get their foot in the door. *If you want a job in the games industry, stop what you're doing right now and watch his talk.*
 
 Jacob suggests that you need to make game content if you want to get a job in the industry and recommends that you
 
