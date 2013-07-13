@@ -20,6 +20,28 @@
     _gaq.push(['_setAccount', 'UA-41795401-1']);
     _gaq.push(['_trackEvent', 'Error', '404', 'page: ' + document.location.pathname + document.location.search + ' ref: ' + document.referrer ]);
     
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_addTrans',
+      '404',            // transaction ID - required
+      'LEEMART',        // affiliation or store name
+      '1.00',           // total - required
+      '0.10',           // tax
+      '0',              // shipping
+      '',               // city
+      '',               // state or province
+      ''                // country
+    ]);
+  
+    _gaq.push(['_addItem',
+      '404',            // transaction ID - required
+      'DEADBEEF',       // SKU/code - required
+      '404 Page',       // product name
+      'Error Pages',    // category or variation
+      '1.00',           // unit price - required
+      '1'               // quantity - required
+    ]);
+    _gaq.push(['_trackTrans']); //submits transaction to the Analytics servers    
+      
     (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -27,4 +49,3 @@
     })();
   </script>
 </html>
-
