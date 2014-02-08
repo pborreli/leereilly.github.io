@@ -1,0 +1,63 @@
+body {
+  padding-top: 50px;
+}
+
+.starter-template {
+  padding: 20px 15px;;
+}
+
+@font-face {
+  font-family: "ocra10";
+  src: url(/fonts/ocra10.ttf) format("truetype");
+}
+
+h1,h2,h3,h4{
+  color: #333;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 400;
+}
+
+.post p ul li{
+  margin-bottom: 20px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  padding-left: 0px;
+  font-size: 20px;
+  color: #333;
+  font-weight: 100;
+}
+
+pre.code {
+  padding: 0px 0px 0px 0px;
+  font-family: Monaco, Andale Mono, Courier New, monospace;
+  font-size: 12px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  background-color: #fff;
+  margin: 0 0 0 0;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+ul.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+ul.posts li {
+  line-height: 1.75em;
+}
+
+ul.posts span {
+  color: #aaa;
+  font-family: "ocra10", monospace, "Courier New";
+}
+
+.code {
+  font-family: "ocra10", monospace, "Courier New";
+}
